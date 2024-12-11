@@ -9,9 +9,9 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = {"src/spec/features"},
-		plugin = {"pretty", "html:target/cucumber-report.html"},
-		//glue = {"step_definitions"},
-		tags = (""),
+		plugin = {"pretty", "html:target/report/cucumber-report.html"},
+		//glue = {"com.e2eTest.automation.step_definitions"},
+		tags = ("@connexion"),
 		monochrome = true,
 		snippets = CAMELCASE
 		

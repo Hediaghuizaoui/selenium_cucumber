@@ -9,7 +9,7 @@ import java.util.Properties;
 public class ConfigFileReader {
 
 	private Properties properties;
-	private String propertyFilePath = "src/test/resources/configs/ConfigFile.properties";
+	private String propertyFilePath = "src/test/resources/configs/env-config.properties";
 
 	/**
 	 * Instanciation de config file reader.
@@ -64,7 +64,7 @@ public class ConfigFileReader {
 	 * @param adress application param
 	 * @return application param
 	 */
-	public String getProperties(String prop) {
+	public String getProperty(String prop) {
 		String param = properties.getProperty(prop);
 		if (param != null)
 			return param;

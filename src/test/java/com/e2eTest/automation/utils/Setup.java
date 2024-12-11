@@ -41,6 +41,8 @@ public class Setup {
 			chromeOptions.addArguments("['start-maximized']");
 			chromeOptions.addArguments("--disable-search-engine-choice-screen");
 			driver = new ChromeDriver(chromeOptions);
+			 driver.manage().window().maximize();
+
 			break;
 
 		case "firefox":
