@@ -41,6 +41,7 @@ public class LoginStepDefinition {
 	@When("Je clique sur le bouton Login")
 	public void clickOnLoginPage() throws InterruptedException {
 		loginPage.getBtnLogin();
+		Thread.sleep(3000);
 
 	}
 
